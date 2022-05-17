@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides Img</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/spinner.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+<body>
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+   
+        <div class="header">
+            <div class="container-slider">
+                <div class="slider-item fade">
+                    <img id="imgCurrent" src="" alt="">
+                </div>
+            </div>
+                <div class="prev" onclick="SelectedImg(-1)"><</div>
+                <div class="next" onclick="SelectedImg(1)">></div>
+            </div>
+            <div class="container-descript" style="text-align: center;">
+                <div id="container-dot" style="text-align: center;"></div>
+                <p><strong>Photo by - </strong><span id="photographer-name" class="photographer-name">Aaron Burder</span></p>
+                <p>Location - <span id="location-name" class="location-name"></span>. <a id="link-descript" target="_blank" >Link</a></p>
+            </div>
+            <br/>
+            
+            </div>
+            <div id="container-thumnail"></div>
+            <div class="container-table" id="container-table">
+            </div>
+            <div id="box" class="box-pagination">
+                <div id="container-pagination">
+                </div>
+                <select class="select-pageNumber" id="rowsPerPage" onchange="ChangeRowsPerPage()">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+        </div>
+        
+        <script id="small-template" type="text/x-handlebars-template">
+            
+                    {{#each big_data}}
+                       <img style="max-width: 100px;" src="{{thumbnailUrl}}" alt="">
+                    {{/each}}
+                </tbody>
+            </table>
+        </script>
+   
+   
+    <script src="./action.js"></script>
+    
+</body>
+</html>
