@@ -16,7 +16,8 @@
   max-height: 520px;
   object-fit: cover; }
 
-.next, .prev {
+.next,
+.prev {
   cursor: pointer;
   position: absolute;
   top: 26%;
@@ -45,7 +46,8 @@
     width: 35px;
     height: 35px; }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: white;
   opacity: 0.8; }
 
@@ -59,7 +61,8 @@
   transition: background-color 0.6s ease;
   margin: 2px; }
 
-.active-dot, .dot:hover {
+.active-dot,
+.dot:hover {
   background-color: #6f6d6d;
   border: 2px solid #fff; }
 
@@ -76,7 +79,8 @@
   border: 3px solid white;
   transition: background-color 0.6s ease; }
 
-.active-thumnail-item, .thumnail-item:hover {
+.active-thumnail-item,
+.thumnail-item:hover {
   border: 3px solid red;
   opacity: 1; }
 
@@ -119,7 +123,9 @@
 table {
   width: 100%; }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #bbb;
   border-collapse: collapse;
   padding: 10px; }
@@ -148,7 +154,8 @@ table, th, td {
   margin-right: 2px;
   user-select: none; }
 
-.pagi-item-next, .pagi-item-prev {
+.pagi-item-next,
+.pagi-item-prev {
   display: inline-block;
   border: #6f6d6d solid 1px;
   border-radius: 5px;
@@ -172,11 +179,12 @@ table, th, td {
 
 @keyframes fade {
   from {
-    opacity: .4; }
+    opacity: 0.4; }
   to {
     opacity: 1; } }
 @media only screen and (max-width: 767px) {
-  .next, .prev {
+  .next,
+  .prev {
     padding: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
