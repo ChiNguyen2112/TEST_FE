@@ -238,7 +238,7 @@ async function InitCall() {
     loader.style.display = "none";
     container.style.display = "block";
     containerdes.style.display = "block";
-    containerthum.style.display = "block";
+    containerthum.style.display = "flex";
     containertable.style.display = "block";
     boxpagination.style.display = "flex";
   }, 2000);

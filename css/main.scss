@@ -16,35 +16,43 @@ $color-grey: #bbb;
 .slider-item img{
     width: 100%;
     max-height: 520px ;
+    object-fit: cover;
 }
 
 .next, .prev {
     cursor: pointer;
     position: absolute;
-    top: 30%;
+    top: 26%;
     width: auto;
     /* margin-top: -62px; */
     color: #bbb;
     font-size: 18px;
     font-weight: bold;
-    border: 1px rgb(0, 0, 0) solid;
+    // border: 1px rgb(0, 0, 0) solid;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px;
     user-select: none;
-    padding: 16px;
-    background-color: rgb(0, 0, 0);
+     padding: 3px;
+    background-color: $color-white;
     opacity: 0.6;
 }
 
 .next {
     right: 0;
-    margin-right: 9px;
-    border-radius: 3px 0 0 3px;
+    margin-right: 30px;
+    img{
+        width: 35px;
+        height: 35px;
+    }
 }
-
+.prev{margin-left: 30px;
+    img{
+        width: 35px;
+        height: 35px;
+    }}
 .prev:hover, .next:hover  {
-    background-color: rgb(0, 0, 0);
-    opacity: 1;
+    background-color: white;
+    opacity: 0.8;
 }
 
 .dot{
@@ -60,6 +68,7 @@ $color-grey: #bbb;
 
 .active-dot,.dot:hover {
     background-color: #6f6d6d;
+    border: 2px solid $color-white;
 }
 
 .fade {
@@ -71,14 +80,14 @@ $color-grey: #bbb;
     /* display: inline-block; */
     width: 10%;
     height: auto;
-    margin: 5px 2px;
+    margin: 5px 5px;
     border-radius: 5px;
-    border: 2px solid white;
+    border: 3px solid white;
     transition: background-color 0.6s ease ;
-    opacity: 0.5;
+    // opacity: 0.5;
 }
 .active-thumnail-item, .thumnail-item:hover{
-    border: 1px solid red;
+    border: 3px solid red;
     opacity: 1;
 }
 
@@ -87,16 +96,21 @@ $color-grey: #bbb;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     background-color: $color-black;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .container-descript p{
     margin-top: 0px;
     margin-bottom: 0px;
+    padding: 10px;
 }
-
-.container-descript a{
+#link-descript{
+    color: $color-white;
+}
+#container-descript a{
     color: white;
 }
-
+.container-dot{padding: 10px}
 .photographer-name{
     text-decoration: underline;
     font-weight: bolder;
@@ -125,11 +139,12 @@ table, th, td{
 
 .container-table{
     display: none;
+    text-align: center;
     margin: 10px 0px;
 }
 #box{display: none;}
 .box-pagination{
-    
+    justify-content: center;
     display: flex;
     margin-bottom: 20px;
 }
@@ -179,3 +194,20 @@ table, th, td{
 }
 
 // #container-pagination{display: none;}
+// .btn-slide {
+//   position: absolute;
+//   background: $color-white;
+//   width: 40px;
+//   height: 40px;
+//   padding: 10px;
+//   border-radius: 50%;
+//   opacity: 0;
+//   border: 1px solid rgba(34, 34, 34, 0.287);
+//   transition: opacity 300ms ease-in-out;
+//   cursor: pointer;
+//   overflow: hidden;
+//   z-index: 10;
+//   img {
+//     width: 100%;
+//   }
+// }
