@@ -115,7 +115,6 @@
   text-decoration: underline; }
 
 #container-thumnail {
-  height: 150px;
   background: #222;
   display: none;
   overflow-x: hidden;
