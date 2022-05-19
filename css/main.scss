@@ -116,7 +116,7 @@ $color-grey: #bbb;
 .container-descript p {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 10px;
+  padding: 5px;
 }
 #link-descript {
   color: $color-white;
@@ -126,6 +126,9 @@ $color-grey: #bbb;
 }
 .container-dot {
   padding: 10px;
+}
+#container-dot {
+  padding-bottom: 10px;
 }
 .photographer-name {
   text-decoration: underline;
