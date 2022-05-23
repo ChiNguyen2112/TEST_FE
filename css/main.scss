@@ -101,8 +101,10 @@ a {
 
 .thumnail-item {
   width: 150px;
-  height: auto;
+  min-width: 150px;
+  height: 150px;
   margin: 5px 5px;
+  object-fit: cover;
   border-radius: 5px;
   border: 3px solid white;
   transition: background-color 0.6s ease;
@@ -149,7 +151,9 @@ a {
 }
 
 #container-thumnail {
-  justify-content: space-around;
+  width: 900px;
+  margin: auto;
+  // justify-content: space-around;
   background: $color-black;
   display: none;
   overflow-y: hidden;
@@ -174,21 +178,26 @@ td {
 
 .container-table {
   display: none;
+  opacity: 0;
   text-align: center;
-  margin: 10px 0px;
+  // margin: 10px 0px;
+  // background: white;
 }
 #box {
   display: none;
 }
+#container-pagination{display: none;}
 .box-pagination {
   justify-content: center;
   display: flex;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  // background: white;
+  // margin-bottom: 20px;
+  // margin-top: 20px;
 }
 .pagi-item {
   display: inline-block;
-  border: #6f6d6d solid 1px;
+  //border: #6f6d6d solid 1px;
+  color: white;
   border-radius: 5px;
   cursor: pointer;
   max-width: 50px;
@@ -201,7 +210,8 @@ td {
 .pagi-item-next,
 .pagi-item-prev {
   display: inline-block;
-  border: #6f6d6d solid 1px;
+  color: white;
+  //border: #6f6d6d solid 1px;
   border-radius: 5px;
   cursor: pointer;
   max-width: 50px;

@@ -88,8 +88,10 @@ a {
 
 .thumnail-item {
   width: 150px;
-  height: auto;
+  min-width: 150px;
+  height: 150px;
   margin: 5px 5px;
+  object-fit: cover;
   border-radius: 5px;
   border: 3px solid white;
   transition: background-color 0.6s ease; }
@@ -134,7 +136,8 @@ a {
   text-decoration: underline; }
 
 #container-thumnail {
-  justify-content: space-around;
+  width: 900px;
+  margin: auto;
   background: #222;
   display: none;
   overflow-y: hidden;
@@ -155,21 +158,22 @@ td {
 
 .container-table {
   display: none;
-  text-align: center;
-  margin: 10px 0px; }
+  opacity: 0;
+  text-align: center; }
 
 #box {
   display: none; }
 
+#container-pagination {
+  display: none; }
+
 .box-pagination {
   justify-content: center;
-  display: flex;
-  margin-bottom: 20px;
-  margin-top: 20px; }
+  display: flex; }
 
 .pagi-item {
   display: inline-block;
-  border: #6f6d6d solid 1px;
+  color: white;
   border-radius: 5px;
   cursor: pointer;
   max-width: 50px;
@@ -181,7 +185,7 @@ td {
 .pagi-item-next,
 .pagi-item-prev {
   display: inline-block;
-  border: #6f6d6d solid 1px;
+  color: white;
   border-radius: 5px;
   cursor: pointer;
   max-width: 50px;

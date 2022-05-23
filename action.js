@@ -170,6 +170,7 @@ function RefreshPagi() {
 function ChangeRowsPerPage() {
   let selectedItem = document.getElementById("rowsPerPage");
   rowPerPage = parseInt(selectedItem.value);
+  $(".container-table").css("opacity", "1");
   currentIndexPage = 1;
   console.log(rowPerPage);
   HandlerBarFuc();
@@ -250,3 +251,5 @@ async function InitCall() {
 }
 
 InitCall();
+
+$("#itemContainer").css("display", "flex");
