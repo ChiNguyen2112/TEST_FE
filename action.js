@@ -12,12 +12,15 @@ const containertable = document.querySelector(".container-table");
 const boxpagination = document.querySelector("#box");
 async function FetchData() {
   const response = await fetch(
-    "https://jsonplaceholder.typicode.com/albums/1/photos"
+    // "https://jsonplaceholder.typicode.com/albums/1/photos"
+    "https://pixabay.com/api/?key=27530360-6f20742ba96654d18ed62d387&category=animals&page=1&per_page=100"
   );
   const data = await response.json();
-  dataList = data.slice(0, 10);
-  bigData = data;
-  console.log(dataList);
+  // dataList = data.slice(0, 10);
+  dataList = data.hits.slice(0, 10);
+  console.log("fff", dataList);
+  console.log("fff", dataList.length);
+  bigData = data.hits;
   const responseUser = await fetch(
     "https://jsonplaceholder.typicode.com/users"
   );
@@ -45,7 +48,8 @@ function CurrentImg(index) {
     numberDot[i].className = numberDot[i].className.replace(" active-dot", "");
   }
 
-  document.getElementById("imgCurrent").src = dataList[sliderIndex - 1].url;
+  document.getElementById("imgCurrent").src =
+    dataList[sliderIndex - 1].largeImageURL;
   if (dataList.length > 0) {
     numberDot[sliderIndex - 1].className += " active-dot";
   }
@@ -86,7 +90,8 @@ function ShowSlider(index) {
   );
   currentLink.href = userList[sliderIndex - 1].website;
 
-  document.getElementById("imgCurrent").src = dataList[sliderIndex - 1].url;
+  document.getElementById("imgCurrent").src =
+    dataList[sliderIndex - 1].largeImageURL;
   numberDot[sliderIndex - 1].className += " active-dot";
   numberThumnail[sliderIndex - 1].className += " active-thumnail-item";
 }
@@ -111,7 +116,7 @@ function CreateThumnails(num) {
   for (let index = 0; index < num; index++) {
     let childThumnail = document.createElement("img");
     childThumnail.className = "thumnail-item";
-    childThumnail.src = dataList[index].thumbnailUrl;
+    childThumnail.src = dataList[index].largeImageURL;
     containerThumnail.appendChild(childThumnail);
   }
   let numberThumnail = document.getElementsByClassName("thumnail-item");

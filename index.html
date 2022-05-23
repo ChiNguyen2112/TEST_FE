@@ -23,7 +23,9 @@
                 <div class="slider-item fade">
                     <img id="imgCurrent" src="" alt="">
                 </div>
-                <div class="prev" onclick="SelectedImg(-1)"> <img src="./img/prev.png" alt="prevBtn" /></div>
+                <div class="prev" onclick="SelectedImg(-1)"> 
+                    <img src="./img/prev.png" alt="prevBtn" />
+                </div>
                 <div class="next" onclick="SelectedImg(1)"> <img src="./img/next.png" alt="prevBtn" /></div>
             </div>
                
@@ -47,8 +49,9 @@
                 <select class="select-pageNumber" id="rowsPerPage" onchange="ChangeRowsPerPage()">
                     <option value="5">5</option>
                     <option value="10">10</option>
-                    <option value="15">15</option>
-                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                  
                 </select>
             </div>
         </div>
@@ -56,7 +59,7 @@
         <script id="small-template" type="text/x-handlebars-template">
             
                     {{#each big_data}}
-                       <img style="max-width: 100px;" src="{{thumbnailUrl}}" alt="">
+                       <img style="object-fit:cover" height="107.36" width="150px "src="{{largeImageURL}}" alt="">
                     {{/each}}
                 </tbody>
             </table>
