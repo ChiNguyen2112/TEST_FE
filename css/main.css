@@ -1,12 +1,17 @@
 * {
   box-sizing: border-box; }
 
+body {
+  background: #222; }
+
+a {
+  color: white; }
+
 .header {
   background: black;
   display: none;
   width: 900px;
-  height: 900px;
-  max-height: 900px; }
+  margin: auto; }
 
 .container-slider {
   padding-top: 72px;
@@ -78,7 +83,8 @@
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s; }
+  animation-duration: 1.5s;
+  position: relative; }
 
 .thumnail-item {
   width: 150px;
@@ -114,7 +120,8 @@
   color: white; }
 
 .container-dot {
-  padding: 10px; }
+  padding: 10px;
+  position: relative; }
 
 #container-dot {
   padding-bottom: 10px; }

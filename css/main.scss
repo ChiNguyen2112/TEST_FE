@@ -4,12 +4,17 @@ $color-grey: #bbb;
 * {
   box-sizing: border-box;
 }
+body {
+  background:$color-black;
+}
+a {
+  color: white;
+}
 .header {
   background: black;
   display: none;
   width: 900px;
-  height: 900px ;
-  max-height: 900px;
+  margin:auto;
 }
 
 .container-slider {
@@ -19,6 +24,7 @@ $color-grey: #bbb;
   margin: auto;
   background: $color-black;
 }
+
 .slider-item img {
   width: 100%;
   max-height: 904px;
@@ -90,6 +96,7 @@ $color-grey: #bbb;
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+  position: relative;
 }
 
 .thumnail-item {
@@ -128,6 +135,7 @@ $color-grey: #bbb;
 }
 .container-dot {
   padding: 10px;
+  position: relative;
 }
 #container-dot {
   padding-bottom: 10px;
