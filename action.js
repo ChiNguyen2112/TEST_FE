@@ -13,7 +13,7 @@ const boxpagination = document.querySelector("#box");
 async function FetchData() {
   const response = await fetch(
     // "https://jsonplaceholder.typicode.com/albums/1/photos"
-    "https://pixabay.com/api/?key=27530360-6f20742ba96654d18ed62d387&category=animals&page=1&per_page=100"
+    "https://pixabay.com/api/?key=27530360-6f20742ba96654d18ed62d387&category=animals&page=2&per_page=100"
   );
   const data = await response.json();
   // dataList = data.slice(0, 10);
