@@ -5,7 +5,7 @@ $color-grey: #bbb;
   box-sizing: border-box;
 }
 body {
-  background:$color-black;
+  background: $color-black;
 }
 a {
   color: white;
@@ -14,7 +14,7 @@ a {
   background: black;
   display: none;
   width: 900px;
-  margin:auto;
+  margin: auto;
 }
 
 .container-slider {
@@ -153,7 +153,6 @@ a {
 #container-thumnail {
   width: 900px;
   margin: auto;
-  // justify-content: space-around;
   background: $color-black;
   display: none;
   overflow-y: hidden;
@@ -178,24 +177,22 @@ td {
 
 .container-table {
   display: none;
-  //opacity: 0;
   text-align: center;
-  // margin: 10px 0px;
-  // background: white;
 }
 #box {
   display: none;
 }
-#container-pagination{display: none;}
+#container-pagination {
+  display: none;
+}
 .box-pagination {
   justify-content: center;
   display: flex;
   color: white;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .pagi-item {
   display: inline-block;
-  //border: #6f6d6d solid 1px;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -210,7 +207,6 @@ td {
 .pagi-item-prev {
   display: inline-block;
   color: white;
-  //border: #6f6d6d solid 1px;
   border-radius: 5px;
   cursor: pointer;
   max-width: 50px;
