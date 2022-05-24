@@ -170,7 +170,7 @@ function RefreshPagi() {
 function ChangeRowsPerPage() {
   let selectedItem = document.getElementById("rowsPerPage");
   rowPerPage = parseInt(selectedItem.value);
-  $(".container-table").css("opacity", "1");
+  $(".container-table").css("display", "block");
   currentIndexPage = 1;
   console.log(rowPerPage);
   HandlerBarFuc();
@@ -245,7 +245,7 @@ async function InitCall() {
     container.style.display = "block";
     containerdes.style.display = "block";
     containerthum.style.display = "flex";
-    containertable.style.display = "block";
+    containertable.style.display = "none";
     boxpagination.style.display = "flex";
   }, 2000);
 }

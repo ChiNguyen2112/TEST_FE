@@ -158,7 +158,6 @@ td {
 
 .container-table {
   display: none;
-  opacity: 0;
   text-align: center; }
 
 #box {
@@ -169,7 +168,9 @@ td {
 
 .box-pagination {
   justify-content: center;
-  display: flex; }
+  display: flex;
+  color: white;
+  margin-top: 10px; }
 
 .pagi-item {
   display: inline-block;
